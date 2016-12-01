@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'release/cli'
+
+Release::Cli.start(ARGV)
