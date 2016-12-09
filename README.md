@@ -1,4 +1,4 @@
-# Release
+# PlusOne
 
 This repo contains a generic releases script for bumping a git tag and pushing it to the 'origin'
 
@@ -7,7 +7,7 @@ This repo contains a generic releases script for bumping a git tag and pushing i
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'release', git: 'release'
+gem 'plus-one'
 ```
 
 And then execute:
@@ -21,17 +21,17 @@ $ bundle
 ### help
 
 ```bash
-$ bundle exec release
+$ bundle exec plus-one
 Commands:
-  release create          # create next release
-  release current         # show current release
-  release help [COMMAND]  # Describe available commands or one specific command
+  plus-one create          # create next release
+  plus-one current         # show current release
+  plus-one help [COMMAND]  # Describe available commands or one specific command
 ```
 
 ### create a release
 
 ```bash
-$ bundle exec release create
+$ bundle exec plus-one create
 Fetching from origin
 You are about to create release 'v1.0.1'.
 
@@ -44,9 +44,9 @@ Continue? y
 
 ## Contributing
 
-1. [Fork the repository](https://github.com/ralfclaassens/release)
+1. [Fork the repository](https://github.com/ralfclaassens/plus-one)
 
-1. Clone your newly created repository (e.g. `git clone git@github.com:ralfclaassens/release.git`)
+1. Clone your newly created repository (e.g. `git clone git@github.com:ralfclaassens/plus-one.git`)
 
 1. Create a feature branch (`git checkout -b my-additions`) and make the changes
 

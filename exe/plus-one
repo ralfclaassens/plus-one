@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'release/cli'
+require 'plus-one/cli'
 
-Release::Cli.start(ARGV)
+PlusOne::Cli.start(ARGV)

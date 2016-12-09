@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'spec_helper'
 
-describe Release::Cli do
+describe PlusOne::Cli do
   let(:command_line) { instance_double Cocaine::CommandLine }
 
   before :each do
@@ -12,7 +12,7 @@ describe Release::Cli do
 
   let(:stdout_create) do
     "Fetching from origin
-  You are about to create release 'v1.0.1'.
+  You are about to create plus-one 'v1.0.1'.
 
   This means:
   * a tag 'v1.0.1' will be created
@@ -35,7 +35,7 @@ describe Release::Cli do
   end
 
   describe '#current' do
-    it 'returns the current release' do
+    it 'returns the current plus-one' do
       expect { subject.current }.to output("Fetching from origin\nv1.0.0 (1.0.0\u0001.0.1)\n").to_stdout
     end
   end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'spec_helper'
 
-describe Release::OurVersion do
+describe PlusOne::OurVersion do
   subject { described_class.new '1.2.3' }
 
   describe '#succ' do

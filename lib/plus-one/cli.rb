@@ -4,7 +4,7 @@ require 'bundler/setup'
 require 'thor'
 require 'cocaine'
 
-module Release
+module PlusOne
   class OurVersion < Gem::Version
     def succ
       major, minor, patch = segments
@@ -21,11 +21,11 @@ module Release
   end
 
   class Cli < Thor
-    desc 'create', 'create next release'
+    desc 'create', 'create next plus-one'
     def create
       git_fetch!
       say <<-EOS
-  You are about to create release '#{next_release}'.
+  You are about to create plus-one '#{next_release}'.
 
   This means:
   * a tag '#{next_release}' will be created
@@ -34,7 +34,7 @@ module Release
       create_release!(next_release) if yes?('Continue?')
     end
 
-    desc 'current', 'show current release'
+    desc 'current', 'show current plus-one'
     def current
       git_fetch!
       say("#{current_release} (#{release_date(current_release)})")

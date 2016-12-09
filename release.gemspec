@@ -4,14 +4,14 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = 'release'
+  spec.name          = 'plus-one'
   spec.version       = '1.0.0'
   spec.authors       = ['Ralf Claassens']
   spec.email         = ['ralfclaassens@gmail.com']
 
-  spec.summary       = "This generic release script for bumping a git tag and pushing it to the 'origin'."
-  spec.description   = "This generic release script for bumping a git tag and pushing it to the 'origin'."
-  spec.homepage      = 'https://github.com/ralfclaassens/release'
+  spec.summary       = "This generic plus-one script for bumping a git tag and pushing it to the 'origin'."
+  spec.description   = "This generic plus-one script for bumping a git tag and pushing it to the 'origin'."
+  spec.homepage      = 'https://github.com/ralfclaassens/plus-one'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
